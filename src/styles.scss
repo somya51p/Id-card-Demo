@@ -32,7 +32,7 @@ $myNewApp-theme: mat.define-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($myNewApp-theme);
-
+@import '~bootstrap/dist/css/bootstrap.css';
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
@@ -40,8 +40,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .form-container {
   display: block;
-  max-width: 25rem;
-  margin: auto;
+  max-width: 32rem;
+  margin-top: -5rem;
+  margin-left: 30rem;
   background: #eceff1;
   padding: 5rem;
   border-radius: 1rem;

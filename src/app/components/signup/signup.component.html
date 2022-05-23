@@ -1,1 +1,40 @@
-<p>signup works!</p>
+<div class="form-container mat-elevation-z5">
+    <h1> SignUp a New User! </h1>
+    <form [formGroup]="signUpForm">
+        <mat-form-field>
+            <input matInput placeholder="Name" formControlName="name" />
+            <mat-error *ngIf="name?.errors?.['required']">
+                Name required
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email" formControlName="email" />
+            <mat-error *ngIf="email?.errors?.['required']">
+                Email required
+            </mat-error>
+            <mat-error *ngIf="email?.errors?.['email']">
+                Enter correct Email format
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Password" formControlName="password" type="password" />
+            <mat-error *ngIf="password?.errors?.['required']">
+                Passwrd required
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Confirm Password" formControlName="confirmPassword" type="password" />
+            <mat-error *ngIf="password?.errors?.['required']">
+                Confirm Passwrd required
+            </mat-error>
+        </mat-form-field>
+        <mat-error *ngIf="signUpForm.errors?.['passwordsDontMatch']">
+            Passwords should match!!
+        </mat-error>
+
+        <button mat-raised-button type="submit">SignUp</button>
+        <span>Already have an Account!
+            <a class="sign" routerLink="/login">LogIn</a>
+        </span>
+    </form>
+</div>

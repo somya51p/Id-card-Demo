@@ -1,0 +1,29 @@
+.profile-image {
+    position: relative;
+    width: 120px;
+    margin: auto;
+    padding-bottom: 5rem;
+  }
+  
+  .profile-image img {
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .profile-image button {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 20px;
+    right: 0;
+  }
+  
+  .form-container {
+    max-width: 33rem;
+  }
+  
+  .row {
+    display: flex;
+    gap: 16px;
+  }
+
