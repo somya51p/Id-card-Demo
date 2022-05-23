@@ -2,10 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 It consists of 5 pages i.e. 
-1. Home page, 
-2. Login and Signup pages, 
-3. User Profile page, and 
-4. Update Profile page. 
+1. Home page, --> /
+2. Login  --> /login
+3. Signup pages, --> /signup
+4. User Profile page, -->/home
+5. Update Profile page  -->/profile
 
 
 ## Development server
